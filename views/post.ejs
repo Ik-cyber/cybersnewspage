@@ -4,8 +4,11 @@
     <h1 class="post-title"><i><%= Title %></i></h1>
     <div class="post-img"><img src="<%= image %>" alt="" width="100%" /></div>
     <p class="post-content"><%= content %></p>
+    <div class="sepration"><p>for more click the link below 👇</p></div>
     <a href="<%= link %>" target="”_blank”"><%= linkword %></a>
-    <button><a href="/home">Home-page</a></button>
+    <div>
+      <button class="post-homebutton"><a href="/home">Home-page</a></button>
+    </div>
   </div>
 </div>
 <%- include("footer") -%>
