@@ -1,0 +1,15 @@
+<%- include("header") -%>
+<section class="gradient-background">
+  <div class="index-body">
+    <h1 class="index-head">Cyber's News Page</h1>
+    <%for (key in ppot) { %>
+    <h2 class="index-title"><%- key %></h2>
+
+    <p class="index-content">
+      <%- ppot[key].substring(0,100) %>.....
+      <a href="/post/<%- key %>">Readmore</a>
+    </p>
+    <% } %>
+  </div>
+</section>
+<%- include("footer") -%>
