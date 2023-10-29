@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
 body {
   background: #34044d;
 }
@@ -83,163 +87,240 @@ body {
 }
 
 .welcome-text {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    color: white;
-    font-size:1.5rem;
-    font-family: sans-serif;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: JetBrains Mono, monospace;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: JetBrains Mono, monospace;
 }
 
 .welcome-text div {
-    text-align: center;
+  text-align: center;
 }
 
 .original-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    text-decoration: none;
-    color: #07b92a;
-    font-size: 18px;
-    border-radius: 5px;
-    width: 200px;
-    margin: auto;
-    margin-top: 1rem;
-    height: 40px;
-    border: 0.2rem solid #07b92a;
-    position: relative;
-    transition: 0.3s;
-    background-color: #34044d;
-  }
-  
-  .original-button::before {
-    content: "FREE";
-    display: block;
-    font-size: 13px;
-    background-color: #34044d;
-    color: #fff;
-    border-radius: 3px;
-    padding: 3px 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-5px, -30%);
-    transition: .3s;
-  }
-  
-  .original-button:hover::before {
-    transform: translate(-5px, -50%);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #07b92a;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 200px;
+  margin: auto;
+  margin-top: 1rem;
+  height: 40px;
+  border: 0.2rem solid #07b92a;
+  position: relative;
+  transition: 0.3s;
+  background-color: #34044d;
+}
 
-  .original-button a {
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-  
-    font-family: JetBrains Mono, monospace;
-    font-size: 1rem;
-  }
-  
-  .gradient-background {
-    background: linear-gradient(311deg,#8ac6bb,#36a5de,#4018fd,#c95fb4,#d72493);
-    background-size: 300% 300%;
-    animation: gradient-animation 45s ease infinite;
-    width: 100%;
-    height: 100%;
-  }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  .gradient-background h1 {
+.original-button::before {
+  content: "FREE";
+  display: block;
+  font-size: 13px;
+  background-color: #34044d;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-5px, -30%);
+  transition: 0.3s;
+}
 
-  }
-  .gradient-background h1 {
-    
-  }
+.original-button:hover::before {
+  transform: translate(-5px, -50%);
+}
 
-  .post-body {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: white;
-    padding: 2rem 5rem 2rem 5rem;
-  }
+.original-button a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
 
-  .post-title {
-    padding: 2rem 2rem 3rem 2rem;
-    font-family: JetBrains Mono, monospace;
-  }
+  font-family: JetBrains Mono, monospace;
+  font-size: 1rem;
+}
 
-  .post-content {
-    font-family: JetBrains Mono, monospace;
-    line-height: 34px;
-    font-size: 16px;
-    text-align: left;
-    font-weight: lighter;
-  }
+.gradient-background {
+  background: linear-gradient(
+    311deg,
+    #13ba9b,
+    #31b93e,
+    #157044,
+    #013516,
+    #12ba0c
+  );
+  background-size: 300% 300%;
+  animation: gradient-animation 45s ease infinite;
+  width: 100%;
+  height: 100%;
+}
 
-  .post-img {
-    padding-bottom: 3rem;
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.gradient-background h1 {
+}
+.gradient-background h1 {
+}
 
-  .index-body {
-   background-color: transparent;
-   padding: 3rem;
+.post-body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem 5rem 2rem 5rem;
+}
+
+.post-title {
+  padding: 2rem 2rem 3rem 2rem;
+  font-family: JetBrains Mono, monospace;
+}
+
+.post-content {
+  font-family: JetBrains Mono, monospace;
+  line-height: 34px;
+  font-size: 16px;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.post-img {
+  padding-bottom: 3rem;
+}
+
+.index-body {
+  background-color: transparent;
+  padding: 3rem;
+}
+.index-head {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-family: "Rubik Mono One", monospace;
+  color: white;
+  font-size: 3rem;
+}
+.index-title {
+  padding: 0.5rem 0 1.5rem 0;
+  font-family: "Rubik Mono One", monospace;
+  color: whitesmoke;
+  font-weight: 100;
+  text-align: center;
+}
+
+.index-content {
+  padding: 0 0 2.5rem 0;
+  font-family: "Noto Sans Mono", monospace;
+  color: #fff;
+  text-align: left;
+}
+
+.post-homebutton {
+  padding: 1rem;
+  font-family: JetBrains Mono, monospace;
+  background-color: transparent;
+  border: 3px solid black;
+  margin-top: 2rem;
+}
+
+.post-homebutton a {
+  font-family: JetBrains Mono, monospace;
+  text-decoration: none;
+  font-family: JetBrains Mono, monospace;
+  font-size: 14px;
+}
+
+.sepration {
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.white-border {
+  border-radius: 10px;
+  margin: 4rem 0 1rem 0;
+  padding: 2rem;
+  border: 5px solid white;
+}
+
+#_x32_ {
+  position: absolute;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  /* 0% {
+    left: 0px;
+    top: 0px;
   }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  } */
+  0% {
+    left: auto;
+    right: auto;
+    top: 0vh;
+  }
+  25% {
+    top: 20vh;
+  }
+  50% {
+    top: 40vh;
+  }
+  75% {
+    top: 60vh;
+  }
+  100% {
+    top: 80vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .index-head {
     text-align: center;
-    padding-bottom: 3rem;
-    color: white;
-    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-family: "Rubik Mono One", monospace;
+    font-size: 1rem;
+  }
+  .white-border {
+    margin-top: 30px;
+    transform: skewX(5deg);
   }
   .index-title {
-    padding: 0.5rem 0 1.5rem 0;
-    font-family: JetBrains Mono, monospace;
-    text-align: center;
+    font-size: 0.7rem;
   }
+}
 
-  .index-content {
-    padding: 0 0 2.5rem 0;
-    font-family: JetBrains Mono, monospace;
-    text-align: left;
-  }
-
-  .post-homebutton {
-    padding: 1rem;
-    font-family: JetBrains Mono, monospace;
-    background-color: transparent;
-    border: 3px solid black;
-    margin-top: 2rem;
-  }
-
-  .post-homebutton a {
-    font-family: JetBrains Mono, monospace;
-    text-decoration: none;
-    font-family: JetBrains Mono, monospace;
-    font-size: 14px;
-  }
-
-  .sepration {
-    padding: 1.5rem 0 1.5rem 0;
-  }
-
-  /* @media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .index-head {
       text-align: center;
       padding-bottom: 3rem;

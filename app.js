@@ -7,7 +7,6 @@ const { log } = require("console");
 const { type } = require("os");
 const Url =
   "https://newsdata.io/api/1/news?apikey=pub_29629cf2a60753bbb5d8e8c8b93add00aae01&category=technology&language=en";
-// https://newsdata.io/api/1/news?q=english&apikey=pub_29629cf2a60753bbb5d8e8c8b93add00aae01  results[0].description results[2].link
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 const contt = [];
