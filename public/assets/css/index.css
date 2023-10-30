@@ -39,10 +39,11 @@ body {
   animation: white-out 5s infinite;
 }
 
-.closure::after {
+/* .closure::after {
   content: "";
   position: absolute;
-  height: 25vmin;
+  height: 100%;
+  bottom: 37%;
   width: 40vmin;
   background: #34044d;
   transform: translate(-45vmin, -24.5vmin);
@@ -55,7 +56,7 @@ body {
   width: 40vmin;
   background: #34044d;
   transform: translate(-40vmin, 5vmin);
-}
+} */
 
 .en {
   color: #fa8231;
@@ -73,7 +74,7 @@ body {
   color: #a9b0bd;
 }
 
-@keyframes move {
+/* @keyframes move {
   25% {
     transform: translatey(-5.8vmin);
     opacity: 1;
@@ -84,7 +85,7 @@ body {
   75% {
     transform: translatey(-16.5vmin);
   }
-}
+} */
 
 .welcome-text {
   width: 100vw;
@@ -186,25 +187,35 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(3, 87, 9);
   padding: 2rem 5rem 2rem 5rem;
 }
 
 .post-title {
   padding: 2rem 2rem 3rem 2rem;
-  font-family: JetBrains Mono, monospace;
+  font-family: "Rubik Mono One", monospace;
+  color: white;
+  font-size: 1rem;
 }
 
 .post-content {
   font-family: JetBrains Mono, monospace;
-  line-height: 34px;
+  line-height: 27px;
   font-size: 16px;
   text-align: left;
-  font-weight: lighter;
+  color: white;
+  font-weight: 400;
+  padding: 0 1rem 0 1rem;
 }
 
 .post-img {
-  padding-bottom: 3rem;
+  padding: 0 2rem 3rem 2rem;
+
+}
+
+.post-img img{
+
+  border: 2px solid white;
 }
 
 .index-body {
@@ -236,7 +247,7 @@ body {
 .post-homebutton {
   padding: 1rem;
   font-family: JetBrains Mono, monospace;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.61);
   border: 3px solid black;
   margin-top: 2rem;
 }
@@ -261,7 +272,12 @@ body {
 
 #_x32_ {
   position: absolute;
-  animation: move 5s linear infinite;
+  animation: movel 2s both infinite;
+}
+
+
+@keyframes movel {
+  
 }
 
 @keyframes move {
@@ -285,23 +301,18 @@ body {
     left: 0px;
     top: 0px;
   } */
+  
   0% {
-    left: auto;
-    right: auto;
-    top: 0vh;
-  }
-  25% {
-    top: 20vh;
-  }
-  50% {
-    top: 40vh;
-  }
-  75% {
-    top: 60vh;
+    transform: translateY(-1000px)
   }
   100% {
-    top: 80vh;
+    transform: translateY(-40px)
   }
+}
+
+.homePageButton {
+  position: fixed;
+  top: 20vh;
 }
 
 @media only screen and (max-width: 400px) {
